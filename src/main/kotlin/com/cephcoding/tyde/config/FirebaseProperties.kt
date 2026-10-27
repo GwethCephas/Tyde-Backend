@@ -4,5 +4,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties
 
 @ConfigurationProperties(prefix = "tyde.firebase")
 data class FirebaseProperties(
-    val credentialsPath: String = ""
+    val credentialsPath: String = "",
+    val required: Boolean = false
 )
